@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ability ERP</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/animacoes.css">
+<link rel="stylesheet" href="css/controladoria.css">
+<link rel="stylesheet" href="css/graficos.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="assets/img/logo.png" alt="Ability" class="brand-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+        <span class="brand-fallback" style="display:none">Ability</span>
+      </div>
+      <div class="brand-sub">ERP · protótipo</div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">
+      <label class="user-switch-label" for="user-switch">Logado como</label>
+      <select class="user-switch" id="user-switch"></select>
+      <div class="user-roles" id="user-roles"></div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb"></div>
+      <div class="search-wrap" id="search-wrap">
+        <svg class="icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6.2" stroke="currentColor" stroke-width="1.4"/><path d="M13.6 13.6L17 17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <input type="text" id="global-search" placeholder="Buscar no ERP" autocomplete="off">
+        <div class="search-results" id="search-results" style="display:none"></div>
+      </div>
+    </header>
+    <main class="content"><div class="content-inner" id="content"></div></main>
+  </div>
+</div>
+<script src="js/core/icones.js"></script>
+<script src="js/core/permissoes.js"></script>
+<script src="js/core/dados.js"></script>
+<script src="js/core/navegacao.js"></script>
+<script src="js/modulos/cadastros.js"></script>
+<script src="js/modulos/requisicao.js"></script>
+<script src="js/modulos/orcamento.js"></script>
+<script src="js/modulos/cotacao.js"></script>
+<script src="js/modulos/pedido.js"></script>
+<script src="js/modulos/recebimento.js"></script>
+<script src="js/modulos/fiscal.js"></script>
+<script src="js/modulos/financeiro.js"></script>
+<script src="js/modulos/indicadores.js"></script>
+<script src="js/modulos/almoxarifado.js"></script>
+<script src="js/modulos/frota.js"></script>
+<script src="js/modulos/infra.js"></script>
+<script src="js/modulos/usuarios.js"></script>
+<script src="js/modulos/inicio.js"></script>
+<script src="js/core/busca.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

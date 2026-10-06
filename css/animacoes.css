@@ -1,0 +1,33 @@
+/* ===================== ANIMAÇÕES ===================== */
+@keyframes fadeUp { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform:none; } }
+@keyframes growX { from { width:0; } }
+@keyframes drawDonut { from { stroke-dasharray: 0 999; } }
+@keyframes pulseStar { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.25); opacity:.7; } }
+@keyframes slideIn { from { opacity:0; transform: translateX(-6px); } to { opacity:1; transform:none; } }
+
+.anim-in { animation: fadeUp .38s cubic-bezier(.22,.7,.3,1) backwards; }
+.content > .content-inner > * { animation: fadeUp .34s cubic-bezier(.22,.7,.3,1) backwards; }
+.nav-item { transition: background .16s ease, color .16s ease, box-shadow .16s ease, padding-left .16s ease; }
+.nav-item:hover { padding-left: 13px; }
+.btn { transition: transform .12s ease, opacity .14s ease, border-color .14s ease, box-shadow .14s ease; }
+.btn:hover:not(:disabled) { transform: translateY(-1px); }
+.btn:active:not(:disabled) { transform: translateY(0); }
+.btn-primary:hover:not(:disabled) { box-shadow: 0 4px 14px rgba(200,16,46,.28); }
+.option-card, .doc-card, .kpi, .chart-card, .cc-card { transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
+.option-card:hover, .cc-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+.doc-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.05); }
+.icon-btn { transition: color .14s ease, background .14s ease, transform .14s ease; }
+.icon-btn:hover { transform: scale(1.12); }
+.badge, .tag { transition: transform .14s ease; }
+tbody tr { transition: background .14s ease; }
+tbody tr:hover { background: var(--surface-sunken); }
+.field input, .field select, .field textarea { transition: border-color .14s ease, box-shadow .14s ease; }
+.field input:focus, .field select:focus, .field textarea:focus { box-shadow: 0 0 0 3px var(--accent-soft); }
+.search-result-item { transition: background .12s ease, padding-left .12s ease; }
+.search-result-item:hover { padding-left: 16px; }
+.nav-count.hot { animation: fadeUp .3s backwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
